@@ -65,7 +65,7 @@ Section Main
 
 section.main {
     background-image: url(/img/pexx.jpg);
-    min-height: 600px;
+    padding: 70px 0;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -98,4 +98,42 @@ section.main {
     font-size: 16px;
     border: 0;
     cursor: pointer;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-single {
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+
+.box-single i {
+    color: #124265;
+    font-size: 22px;
+}
+
+.box-single h2 {
+    color: #124265;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.box-single p {
+    color: rgb(99, 98, 98);
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .box-single { 
+        width: 100%;
+    }
 }
