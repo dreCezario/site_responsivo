@@ -57,3 +57,16 @@
     background-color: #07203b;
     color: white;
 }
+
+/*
+Section Main
+*/
+
+section.main {
+    background-image: url(/img/pexx.jpg);
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
