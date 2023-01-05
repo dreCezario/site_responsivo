@@ -130,10 +130,9 @@ section.main {
     line-height: 30px;
 }
 
-
-
 @media screen and (max-width: 768px) {
     .box-single { 
         width: 100%;
+        margin-bottom: 20px;
     }
 }
