@@ -1,3 +1,10 @@
+:root {
+    -color-primary: #16507b;
+    --color-secundary: #124265;
+    --color-primary-light: #007bff;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -195,6 +202,26 @@ section.about {
     display: inline-block;
     width: 100%;
     margin-top: 10px;
+}
+
+/*
+Section Achievements
+*/
+
+section.achievements {
+    background-color: #f8fbfe;
+    padding: 20px 0;
+}
+
+.achievements-single {
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: var(--color-secundary);
+}
+
+.achievements-single h2 {
+    font-size: 30px;
 }
 
 
