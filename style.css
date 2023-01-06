@@ -130,9 +130,59 @@ section.main {
     line-height: 30px;
 }
 
+
+/*
+Section About
+*/
+
+section.about {
+    padding: 80px 0;
+}
+
+.title-about {
+    width: 100%;
+    text-align: center;
+}
+
+.title-about h2 {
+    text-transform: uppercase;
+    color: #124265;
+}
+
+.title-about p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: rgb(99, 98, 98);
+}
+
+.content-about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-about p {
+    width: 48%;
+    margin-right: 2%;
+    color: #444444;
+}
+
+.content-about i {
+    color: #124265;
+}
+
+.content-about span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .box-single { 
         width: 100%;
         margin-bottom: 20px;
+    }
+    .content-about p{
+        width: 100%;
+        margin: 20px 20px;
     }
 }
