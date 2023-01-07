@@ -12,6 +12,10 @@
     font-family: 'Poppins';
 }
 
+.menu-mobile{
+    display: none;
+}
+
 .center {
     max-width: 1100px;
     margin: 0 auto;
@@ -33,7 +37,12 @@
 .logo h2 {
     font-weight: normal;
     font-size: 25px;
+
 }
+/*
+Menu
+*/
+
 
 .menu {
     width: 80%;
@@ -64,6 +73,38 @@
 .menu .btn-menu:hover {
     background-color: #07203b;
     color: white;
+}
+
+/*
+Menu Mobile
+*/
+
+.menu-items{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-items a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+.menu-items.show {
+    opacity: 1;
+    
+}
+
+.menu-items.hide {
+    opacity: 0;
 }
 
 /*
@@ -226,6 +267,23 @@ section.achievements {
 
 
 @media screen and (max-width: 768px) {
+    .logo{
+        width: 20%;
+    }
+    .menu-mobile{
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+    .menu-mobile i{
+        color: var(--color-secundary);
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+    .menu{
+        display: none;
+    }
     .box-single { 
         width: 100%;
         margin-bottom: 20px;
